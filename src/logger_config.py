@@ -6,7 +6,7 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from .config import LogConfig
 
-def setup_logging(config: LogConfig) -> logging.Logger:
+def setup_logging(config: "LogConfig") -> logging.Logger:
     """Setup logging configuration"""
 
     logger = logging.getLogger("llm_slack_chat")
